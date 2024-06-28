@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+html
+{
+	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuYM6W9rARpWscVIu8yg310QEM9kbLg3kx6VKbbGcHrZFn-2CS);
+	background-attachment:fixed;}
+
+body{background-color:yellow;
+      padding-left:100px;
+      padding-right:100px;
+      margin-left:100px;
+      margin-right:100px;
+      margin-top:0px;}
+
+.top {
+position: fixed;
+  /*基準を画面の左上に*/
+  top: 0;
+  left: 0;
+  /*余白が入らないように*/
+  margin:0;
+  /*以下装飾*/
+  width: 100%;
+  background-color: #669999	;
+  color:white;
+  opacity:0.8;
+  font-size:15px;
+  height:8%;
+  overflow:hidden;
+  z-index:3;
+  }
+
+
+
+#X{
+  margin-top:60px;
+   background-color:white;
+   width:100%;  }
+
+.menu-content{width:0%;
+ height:0%;
+ position:fixed;
+ right:0px;
+ top:0px;
+ z-index:2;
+ background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("https://www.pakutaso.com/shared/img/thumb/N845_mokumetex_TP_V.jpg");
+ opacity:1;
+ 	}
+
+.menu-word{position:absolute;
+  top:15%;
+  left:40%;
+  display:grid;
+  }
+.menu-word a{color:gray;
+    text-decoration:none;
+    font-size:2.5rem;
+    transition:0.6s;
+    line-height:200%;}
+
+#nintendo::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:40%;
+border-bottom:medium solid black;
+transition: .3s;
+}
+
+#entore::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:40%;
+border-bottom:medium solid black;
+transition: .3s;
+
+}
+
+.menu-word a:hover{color:black;}
+
+#nintendo:hover::after {
+  width:0%;
+  margin-left:50%;
+}
+
+#entore:hover::after {
+  width:0%;
+  margin-left:50%;
+}
+
+.barger{z-index:3;}
+.barger,.batu{float:right;
+ position:absolute;
+ 	 right:5%;
+ 	 font-size:3em;}
+.batu{opacity:0;}
+
+.border{
+position:relative;
+font-size:2em;
+}
+.border::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:80%;
+border-bottom:medium solid black;
+transition: .3s;
+}
+
+.border:hover::after {
+  width:0%;
+  margin-left:50%;
+}
