@@ -1,0 +1,357 @@
+
+@charset "UTF-8";
+
+/*ローディング画面*/
+#loader-bg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 3;
+}
+/*グルグルGIF*/
+#loader {
+  display: block;
+  position: fixed;
+  left: 30%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  z-index: 4;
+}
+
+.menu-content{width:0%;
+ height:0%;
+ position:fixed;
+ right:0px;
+ top:0px;
+ z-index:2;
+ background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("https://www.pakutaso.com/shared/img/thumb/N845_mokumetex_TP_V.jpg");
+ opacity:1;
+ 	}
+
+.menu-word{position:absolute;
+  top:15%;
+  left:40%;
+  display:grid;
+  }
+.menu-word a{color:gray;
+    text-decoration:none;
+    font-size:2.5rem;
+    transition:0.6s;
+    line-height:200%;}
+
+#nintendo::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:40%;
+border-bottom:medium solid black;
+transition: .3s;
+}
+
+#entore::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:40%;
+border-bottom:medium solid black;
+transition: .3s;
+
+}
+
+.menu-word a:hover{color:black;}
+
+#nintendo:hover::after {
+  width:0%;
+  margin-left:50%;
+}
+
+#entore:hover::after {
+  width:0%;
+  margin-left:50%;
+}
+
+.barger{z-index:3;}
+.barger,.batu{float:right;
+ position:absolute;
+ 	 right:5%;
+ 	 font-size:3em;}
+.batu{opacity:0;}
+
+
+.top {
+/*position: fixed;
+  /*基準を画面の左上に*/
+  top: 0;
+  left: 0;
+  /*余白が入らないように*/
+  margin:0;
+  /*以下装飾*/
+  width: 100%;
+  background-color: #669999	;
+  color:white;
+  opacity:0.8;
+  font-size:15px;
+  height:8%;
+  overflow:hidden;
+  }
+
+.border{
+position:relative;
+font-size:2em;
+}
+.border::after{
+position:absolute;
+content:'';
+left: 0;
+width:100%;
+height:80%;
+border-bottom:medium solid black;
+transition: .3s;
+}
+
+.border:hover::after {
+  width:0%;
+  margin-left:50%;
+}
+
+.top-image{position:relative;
+}
+
+.news{  top:60px;
+        background-color:rgba(0, 0, 205,0.7);
+        font-size:1.25em;
+        width:60%;
+        z-index:1;
+        color:white;
+        position:absolute;
+        top:0;
+}
+
+.main{
+font-family:serif;
+height:50%;
+
+}
+.slider{z-index: 10;
+        position:relative;}
+
+
+.line{width:100%;
+ height:100%;
+      border-bottom:solid 20px red;
+      display:-webkit-box;
+      }
+
+.line-behind{width:0%;
+height:100%;}
+
+
+.line::after{
+border-bottom:solid 10px black;
+}
+
+
+.gazou{
+display:-webkit-box;
+width:100%;
+}
+.a-image,.b-image{margin:5%;}
+.a-image{position:relative;
+width:37%;}
+.a-image img{width:100%;}
+ #a{position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;}
+
+.b-image{position:relative;
+width:37%;}
+.b-image img{width:100%;}
+#b{position:absolute;
+top:0px;
+left:0px;
+width:100%;}
+
+
+.yokoscrool {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      width:700px;
+      background-color:white;
+    }
+
+    .item {
+      /* 横スクロール用 */
+      display: inline-block;
+      margin-top:40px;
+      text-align:center;
+
+    }
+/*スクロールバーの幅*/
+::-webkit-scrollbar {
+    height: 25px;
+}
+/*スクロールバーのレール*/
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: #eee;
+}
+/*スクロールバーのつまみ*/
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #81D4FA;
+}
+#picture{
+width:650px;
+}
+
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  background: white;
+}
+
+.change{writing-mode:vertical-lr;
+       display:inline-block;
+   	   width:100%;
+   	   height:80%;
+   }
+ .change a{color:blue;
+ 		   font-size:1em;
+ 		   display:block;
+ 		    transition: transform 1s;
+ 			transform-origin:right top;
+ 			display:block;
+}
+
+#family-computer{
+background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("../image/family-compters.jpg" );
+background-size:100px;
+width:20%;
+position:relative;
+}
+/*中の文字*/
+.list{position:relative;
+      padding-top:30%;
+      display:-webkit-box;
+      display:none;
+}
+
+#rokuyonn{
+ margin:0px;
+ width:20%;
+ position:relative;
+ background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("https://www.crazy-tutorial.com/ja/wp-content/uploads/2018/11/Nintendo-64-Logo.jpg");}
+
+
+#wii{
+margin:0px;
+width:20%;
+background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("http://www.logovaults.com/stock_thumb/big-nintendo-wii-2013-01-29.jpg");
+position:relative;
+}
+
+#U{width:20%;
+   background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url("https://livedoor.blogimg.jp/yuyugaiden/imgs/1/7/1709d2cf.png");
+   position:relative;
+   }
+
+
+#switch{
+width:20%;
+background:linear-gradient(to top, rgba(192,192,192,0.7) 0%, rgba(192,192,192,0.7) 100%),url(http://www.fkodawara.jp/wp-content/uploads/2017/03/nintendo-switch-logo-design-himitu-4.jpg);
+position:relative;}
+
+.rotate{
+	position:relative;
+}
+
+.f{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-color:#FF716C;
+content:"";
+transition: .6s;
+}
+
+.r{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-color:#FFDC7D;
+content:"";
+transition: .6s;
+}
+
+.w{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-color:#8FE86B;
+content:"";
+transition: .6s;
+}
+
+.U{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-color:#82F5FF;
+content:"";
+transition: .6s;
+}
+
+.s{
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-color:#946BE8;
+content:"";
+transition: .6s;
+}
+
+.f:hover{opacity:0;}
+.r:hover{opacity:0;}
+.w:hover{opacity:0;}
+.U:hover{opacity:0;}
+.s:hover{opacity:0;}
+
+
+.friend{
+background-color:green;
+color:white;
+width:300px;
+text-align:center;
+transition:all 1s;
+
+}
+.friend:hover{
+background-color:#80ff80;
+}
+#friend{
+background-color:#808080;
+width:100%;
+height:150px;
+}
+
+.bx-wrapper .bx-controls-direction a{z-index:0 !important;}

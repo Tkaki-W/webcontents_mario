@@ -1,0 +1,91 @@
+@charset "UTF-8";
+h1{
+padding-top:50px;
+
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform:translateY(20px);
+}
+to {
+    opacity: 1;
+    transform:translateY(0px)
+}
+}
+
+h3{
+color:green;
+
+background-color:white;
+}
+.character{
+border-bottom:5px solid #333;
+}
+#Y{
+padding-left:400px;
+color:green;
+
+}
+#Z{
+padding-left:350px;
+color:green;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+.top a{color:white;
+	   }
+
+p{font-size:20px;
+  color:blue;
+  opacity:0.7;}
+
+  /* パソコン・スマホ共通のCSS */
+#PageTopBtn {
+    position: fixed; /*ボタンの配置場所を固定*/
+    bottom: -10px; /*下からのボタンの配置場所を指定*/
+    right: 10px; /*右からのボタンの配置場所を指定*/
+}
+#PageTopBtn a {
+    display: block; /*配置の調整*/
+    text-decoration: none; /*文字の下線を消す*/
+    color: #fff; /*文字の色*/
+    background: #00bfff; /*ボタンの背景色*/
+    text-align: center; /*文字を中央に配置*/
+    border-radius: 5%; /*ボタンの角を少し丸くする*/
+    outline: none; /*クリックしたときの黒い枠を消す*/
+}
+#PageTopBtn a:hover {
+    text-decoration: none;
+    background: #87cefa; /*マウスオーバー時の背景色*/
+}
+
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+#PageTopBtn {
+    font-size: 13px; /*文字のサイズ*/
+}
+#PageTopBtn a {
+    width: 100px; /*ボタンの幅*/
+    height: 70px; /*ボタンの高さ*/
+    padding: 24px 0; /*文字の配置場所の調整*/
+}
+}
+
+/* スマホで表示する場合のCSS */
+@media (max-width: 767px) {
+#PageTopBtn {
+    font-size: 10px;
+}
+#PageTopBtn a {
+    width: 70px;
+    height: 50px;
+    padding: 17px 0;
+}
+}
